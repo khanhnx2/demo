@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sửa người dùng · MOC Gems Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="users"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<a href='a02-users-list.html'>Người dùng</a> / <b>Hải Đăng</b>"></header>
+    <div class="content" style="max-width:760px">
+      <div class="page-head"><div><h1>Sửa người dùng</h1><p>Cập nhật thông tin & vai trò</p></div></div>
+
+      <div class="card card-pad">
+        <div class="form-row"><div><label class="alabel">Họ tên</label><input class="ainput" value="Hải Đăng"></div><div><label class="alabel">Email</label><input class="ainput" type="email" value="dang@mocgems.com"></div></div>
+        <div class="form-row" style="margin-top:16px"><div><label class="alabel">Vai trò</label><select class="aselect"><option>Staff</option><option>Admin</option><option>Super Admin</option></select></div><div><label class="alabel">Mật khẩu mới</label><input class="ainput" type="password" placeholder="Để trống nếu không đổi"></div></div>
+        <div class="divider"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div><div class="alabel" style="margin-bottom:2px">Trạng thái hoạt động</div><span class="muted" style="font-size:12px">Vô hiệu hóa sẽ chặn đăng nhập</span></div>
+          <span class="switch on"></span>
+        </div>
+        <div class="notice notice-blue" style="margin-top:18px"><svg class="icon icon-sm" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg><div>Staff chỉ được xử lý luồng giao hàng (đã thanh toán → gia công → đóng gói → giao). Không được xác nhận thanh toán, hủy đơn, hay quản lý voucher.</div></div>
+        <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:22px">
+          <a href="a02-users-list.html" class="btn btn-ghost btn-sm">Hủy</a>
+          <a href="a02-users-list.html" class="btn btn-gold btn-sm">Lưu thay đổi</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

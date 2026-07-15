@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đăng nhập · MOC Gems Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body style="background:var(--admin-side);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px">
+<div style="width:100%;max-width:400px">
+  <div style="text-align:center;margin-bottom:28px">
+    <div style="font-family:'Cormorant';font-size:30px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;display:inline-flex;align-items:center;gap:10px">
+      <svg class="icon" viewBox="0 0 24 24" style="color:var(--gold);width:26px;height:26px"><path d="M6 3h12l4 6-10 12L2 9Z"/></svg>MOC Gems
+    </div>
+    <p style="color:#8a8178;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-top:6px">Admin Panel</p>
+  </div>
+  <div class="card card-pad" style="border-radius:var(--r-lg)">
+    <h1 style="font-size:28px;margin-bottom:4px">Đăng nhập</h1>
+    <p class="muted" style="font-size:13px;margin-bottom:22px">Quản trị dành cho nhân viên MOC Gems</p>
+    <div class="field"><label class="alabel">Email</label><input class="ainput" type="email" value="admin@mocgems.com" autocomplete="username"></div>
+    <div class="field"><label class="alabel">Mật khẩu</label>
+      <div style="position:relative"><input class="ainput" type="password" value="••••••••" autocomplete="current-password" style="padding-right:44px">
+      <button class="icon-btn" style="position:absolute;right:2px;top:1px;width:40px;height:40px" aria-label="Hiện mật khẩu"><svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin:6px 0 18px;font-size:13px">
+      <label style="display:flex;gap:8px;align-items:center"><input type="checkbox" checked> Ghi nhớ</label>
+      <a href="#" style="color:var(--gold-deep)">Quên mật khẩu?</a>
+    </div>
+    <a href="a01-dashboard.html" class="btn btn-gold btn-block">Đăng nhập</a>
+  </div>
+  <p style="text-align:center;color:#6f665b;font-size:11px;margin-top:20px">Không có đăng ký công khai — tài khoản do Super Admin tạo.</p>
+</div>
+</body>
+</html>
