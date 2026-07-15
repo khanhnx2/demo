@@ -20,7 +20,7 @@
   ];
   function ic(d){ return '<svg class="icon" viewBox="0 0 24 24"><path d="'+d+'"/></svg>'; }
   function buildSide(active){
-    var h = '<div class="side-brand"><svg class="icon gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9Z"/></svg>Thanh Vân</div>';
+    var h = '<div class="side-brand"><svg class="icon gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9Z"/></svg>MOC Gems</div>';
     NAV.forEach(function(sec){
       if (sec.g) h += '<div class="side-group">'+sec.g+'</div>';
       sec.items.forEach(function(it){
