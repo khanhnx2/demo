@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tạo voucher · Vân Hương Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="vouchers"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<a href='a10-vouchers-list.html'>Voucher</a> / <b>XUAN2026</b>"></header>
+    <div class="content" style="max-width:820px">
+      <div class="page-head"><div><h1>Sửa voucher</h1><p>Cấu hình mã giảm giá</p></div>
+        <div style="display:flex;gap:10px"><a href="a10-vouchers-list.html" class="btn btn-ghost btn-sm">Hủy</a><a href="a10-vouchers-list.html" class="btn btn-gold btn-sm">Lưu</a></div></div>
+
+      <div class="card card-pad">
+        <div class="form-row"><div><label class="alabel">Mã voucher</label><input class="ainput" value="XUAN2026" style="text-transform:uppercase"></div><div><label class="alabel">Loại giảm giá</label><select class="aselect"><option>Giảm tiền cố định</option><option>Giảm phần trăm</option><option>Miễn phí vận chuyển</option></select></div></div>
+        <div class="form-row" style="margin-top:16px"><div><label class="alabel">Giá trị giảm</label><input class="ainput tabnum" value="500.000"></div><div><label class="alabel">Đơn tối thiểu</label><input class="ainput tabnum" value="5.000.000"></div></div>
+        <div class="divider"></div>
+        <div class="field"><label class="alabel">Phạm vi áp dụng</label>
+          <div class="swatches" style="margin-bottom:10px"><span class="swatch sel" style="border-radius:var(--r-sm)">Toàn bộ</span><span class="swatch" style="border-radius:var(--r-sm)">Theo sản phẩm</span><span class="swatch" style="border-radius:var(--r-sm)">Theo danh mục</span></div>
+        </div>
+        <div class="form-row"><div><label class="alabel">Giới hạn tổng lượt dùng</label><input class="ainput tabnum" value="100"></div><div><label class="alabel">&nbsp;</label><div class="notice notice-blue" style="padding:8px 12px;font-size:11px">Không giới hạn theo khách (guest checkout không xác thực danh tính)</div></div></div>
+        <div class="form-row" style="margin-top:16px"><div><label class="alabel">Bắt đầu</label><input class="ainput" type="date" value="2026-01-15"></div><div><label class="alabel">Kết thúc</label><input class="ainput" type="date" value="2026-02-28"></div></div>
+        <div class="divider"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center"><div><div class="alabel" style="margin-bottom:2px">Kích hoạt</div><span class="muted" style="font-size:12px">Voucher có thể được áp dụng khi thanh toán</span></div><span class="switch on"></span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

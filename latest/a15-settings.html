@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cài đặt · Vân Hương Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="settings"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<b>Cài đặt</b>"></header>
+    <div class="content" style="max-width:820px">
+      <div class="page-head"><div><h1>Cài đặt cửa hàng</h1><p>Cấu hình vận hành</p></div><a href="#" class="btn btn-gold btn-sm">Lưu cài đặt</a></div>
+
+      <div class="card card-pad" style="margin-bottom:20px">
+        <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:16px">Vận chuyển & thanh toán</h3>
+        <div class="form-row"><div><label class="alabel">Phí vận chuyển cố định</label><input class="ainput tabnum" value="30.000"></div><div><label class="alabel">Miễn phí ship từ</label><input class="ainput tabnum" value="2.000.000"></div></div>
+        <div class="form-row" style="margin-top:16px"><div><label class="alabel">Hết hạn đơn chưa thanh toán (phút)</label><input class="ainput tabnum" value="30"></div><div><label class="alabel">Thời gian ân hạn (phút)</label><input class="ainput tabnum" value="10" disabled style="opacity:.6"><div class="help">Cố định — chống race webhook vs cron</div></div></div>
+      </div>
+
+      <div class="card card-pad" style="margin-bottom:20px">
+        <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:16px">Thông tin cửa hàng</h3>
+        <div class="field"><label class="alabel">Tên cửa hàng</label><input class="ainput" value="Vân Hương"></div>
+        <div class="form-row" style="margin-top:2px"><div><label class="alabel">Hotline</label><input class="ainput" value="0900 123 456"></div><div><label class="alabel">Email</label><input class="ainput" value="hello@vanhuong.info"></div></div>
+        <div class="field" style="margin-top:16px"><label class="alabel">Địa chỉ</label><input class="ainput" value="TP. Hồ Chí Minh"></div>
+      </div>
+
+      <div class="card card-pad">
+        <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:6px">Thông tin chuyển khoản dự phòng</h3>
+        <p class="muted" style="font-size:12px;margin-bottom:16px">Hiển thị khi khách không quét được mã QR.</p>
+        <div class="form-row"><div><label class="alabel">Ngân hàng</label><input class="ainput" value="Vietcombank"></div><div><label class="alabel">Số tài khoản</label><input class="ainput" value="0071000123456"></div></div>
+        <div class="field" style="margin-top:16px"><label class="alabel">Chủ tài khoản</label><input class="ainput" value="CONG TY MOC GEMS"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sửa sản phẩm · Vân Hương Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="products"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<a href='a04-products-list.html'>Sản phẩm</a> / <b>Nhẫn Kim cương Solitaire</b>"></header>
+    <div class="content">
+      <div class="page-head"><div><h1>Sửa sản phẩm</h1><p>SP-0142</p></div>
+        <div style="display:flex;gap:10px"><a href="a04-products-list.html" class="btn btn-ghost btn-sm">Hủy</a><a href="a04-products-list.html" class="btn btn-gold btn-sm">Lưu sản phẩm</a></div></div>
+
+      <div class="form-grid">
+        <div style="display:grid;gap:20px">
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:16px">Thông tin cơ bản</h3>
+            <div class="field"><label class="alabel">Tên sản phẩm</label><input class="ainput" value="Nhẫn Kim cương Solitaire"></div>
+            <div class="form-row"><div><label class="alabel">Danh mục</label><select class="aselect"><option>Nhẫn</option><option>Dây chuyền</option></select></div><div><label class="alabel">Bộ sưu tập</label><select class="aselect"><option>Đính hôn</option><option>Xuân 2026</option></select></div></div>
+            <div class="field" style="margin-top:16px"><label class="alabel">Mô tả</label><textarea class="atextarea">Nhẫn kim cương thiết kế solitaire tối giản, tôn vẻ đẹp viên đá chủ.</textarea></div>
+          </div>
+
+          <div class="card card-pad">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px"><h3 style="font-family:'Open Sans';font-size:14px;font-weight:600">Biến thể</h3><button class="btn btn-ghost btn-sm">+ Thêm biến thể</button></div>
+            <table class="table" style="font-size:12px">
+              <thead><tr><th>SKU</th><th>Ni</th><th>Loại vàng</th><th>Loại đá</th><th>Giá vốn</th><th>Giá bán</th><th></th></tr></thead>
+              <tbody>
+                <tr><td><input class="ainput" style="min-height:34px;padding:6px 8px" value="RING-18K-8"></td><td><input class="ainput" style="min-height:34px;padding:6px 8px;width:52px" value="8"></td><td>Vàng 18K</td><td>Kim cương TN</td><td class="tabnum">18.000.000</td><td class="tabnum">24.500.000</td><td><button class="icon-btn" style="width:30px;height:30px" aria-label="Xóa"><svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2m2 0v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V6"/></svg></button></td></tr>
+                <tr><td><input class="ainput" style="min-height:34px;padding:6px 8px" value="RING-WG-8"></td><td><input class="ainput" style="min-height:34px;padding:6px 8px;width:52px" value="8"></td><td>Vàng trắng</td><td>Kim cương TN</td><td class="tabnum">18.500.000</td><td class="tabnum">25.200.000</td><td><button class="icon-btn" style="width:30px;height:30px" aria-label="Xóa"><svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4h8v2m2 0v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V6"/></svg></button></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:14px">Thuộc tính</h3>
+            <div class="form-row"><div><label class="alabel">Trọng lượng đá</label><input class="ainput" value="0.5 ct"></div><div><label class="alabel">Độ tinh khiết</label><input class="ainput" value="VS1"></div></div>
+            <div class="form-row" style="margin-top:14px"><div><label class="alabel">Thời gian gia công</label><input class="ainput" value="7–10 ngày"></div><div><label class="alabel">Bảo hành</label><input class="ainput" value="Trọn đời"></div></div>
+          </div>
+        </div>
+
+        <div style="display:grid;gap:20px">
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:6px">Trạng thái</h3>
+            <select class="aselect"><option>Hiển thị</option><option>Bản nháp</option><option>Ẩn</option></select>
+          </div>
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:12px">Hình ảnh</h3>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+              <div class="ph ratio-1" style="border-radius:var(--r-sm);border:2px solid var(--gold);position:relative"><span class="badge badge-gold" style="position:absolute;top:6px;left:6px">Ảnh bìa</span></div>
+              <div class="ph ratio-1" style="border-radius:var(--r-sm)"></div>
+              <div class="ph ratio-1" style="border-radius:var(--r-sm)"></div>
+              <div style="border:1.5px dashed var(--line);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;color:var(--muted);flex-direction:column;gap:6px;cursor:pointer">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span style="font-size:11px">Tải lên</span>
+              </div>
+            </div>
+            <p class="muted" style="font-size:11px;margin-top:10px">JPG/WebP · kéo để sắp xếp · SVG không được phép</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

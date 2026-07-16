@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thư viện giao diện · Vân Hương</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .g-card { display:block; background:var(--paper); border:1px solid var(--line); border-radius:var(--r); overflow:hidden; transition:transform .2s var(--ease), box-shadow .2s; }
+  .g-card:hover { transform:translateY(-3px); box-shadow:var(--sh-2); }
+  .g-thumb { aspect-ratio:16/10; position:relative; display:flex; align-items:center; justify-content:center; }
+  .g-thumb .code { position:absolute; top:8px; left:8px; }
+  .g-body { padding:12px 14px; }
+  .g-body h4 { font-family:'Open Sans'; font-size:13px; font-weight:600; }
+  .g-body p { font-size:11px; color:var(--muted); margin:2px 0 0; }
+  .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  @media(max-width:900px){ .grid{grid-template-columns:repeat(2,1fr);} }
+</style>
+</head>
+<body style="background:var(--cream)">
+<div class="wrap" style="padding:44px 24px 60px">
+  <p class="eyebrow">Vân Hương · Mockup</p>
+  <h1 style="font-size:48px;margin:8px 0 4px">Thư viện giao diện</h1>
+  <p class="muted" style="margin-bottom:12px">26 màn theo đặc tả <span class="kbd">screen-list.md</span> · Open Sans + Ubuntu · palette ivory/rose-gold</p>
+
+  <h2 style="font-size:28px;margin:34px 0 16px">Storefront <span class="muted" style="font-size:14px;font-family:'Open Sans'">10 màn · công khai</span></h2>
+  <div class="grid">
+    <a class="g-card" href="s01-home.html"><div class="g-thumb ph"><span class="badge badge-gold code">S1</span><h3 style="color:var(--ink)">Vân Hương</h3></div><div class="g-body"><h4>Trang chủ</h4><p>/ · hero, danh mục, nổi bật</p></div></a>
+    <a class="g-card" href="s02-category.html"><div class="g-thumb ph"><span class="badge badge-gold code">S2</span></div><div class="g-body"><h4>Danh sách sản phẩm</h4><p>/danh-muc/{slug} · lọc + lưới</p></div></a>
+    <a class="g-card" href="s03-product-detail.html"><div class="g-thumb ph"><span class="badge badge-gold code">S3</span></div><div class="g-body"><h4>Chi tiết sản phẩm</h4><p>variant picker, thông số</p></div></a>
+    <a class="g-card" href="s04-cart.html"><div class="g-thumb ph"><span class="badge badge-gold code">S4</span></div><div class="g-body"><h4>Giỏ hàng</h4><p>sửa số lượng, tóm tắt</p></div></a>
+    <a class="g-card" href="s05-checkout.html"><div class="g-thumb ph"><span class="badge badge-gold code">S5</span></div><div class="g-body"><h4>Thanh toán</h4><p>guest form + voucher</p></div></a>
+    <a class="g-card" href="s06-checkout-success-qr.html"><div class="g-thumb ph"><span class="badge badge-gold code">S6</span></div><div class="g-body"><h4>Đặt hàng + QR</h4><p>VietQR, polling, fallback</p></div></a>
+    <a class="g-card" href="s07-order-lookup.html"><div class="g-thumb ph"><span class="badge badge-gold code">S7</span></div><div class="g-body"><h4>Tra cứu đơn</h4><p>code+phone, hủy đơn (§10)</p></div></a>
+    <a class="g-card" href="s08-contact-custom.html"><div class="g-thumb ph"><span class="badge badge-gold code">S8</span></div><div class="g-body"><h4>Đặt theo yêu cầu</h4><p>form liên hệ custom</p></div></a>
+    <a class="g-card" href="s09-landing.html"><div class="g-thumb ph"><span class="badge badge-gold code">S9</span></div><div class="g-body"><h4>Landing động</h4><p>dựng từ block JSON</p></div></a>
+    <a class="g-card" href="s10-error.html"><div class="g-thumb ph"><span class="badge badge-gold code">S10</span></div><div class="g-body"><h4>Trang lỗi 404</h4><p>empty state</p></div></a>
+  </div>
+
+  <h2 style="font-size:28px;margin:40px 0 16px">Admin <span class="muted" style="font-size:14px;font-family:'Open Sans'">16 màn · Super Admin / Admin / Staff</span></h2>
+  <div class="grid">
+    <a class="g-card" href="a00-login.html"><div class="g-thumb" style="background:var(--admin-side)"><span class="badge badge-gold code">A0</span><svg class="icon" viewBox="0 0 24 24" style="color:var(--gold);width:30px;height:30px"><path d="M6 3h12l4 6-10 12L2 9Z"/></svg></div><div class="g-body"><h4>Đăng nhập</h4><p>không đăng ký công khai</p></div></a>
+    <a class="g-card" href="a01-dashboard.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A1</span></div><div class="g-body"><h4>Dashboard</h4><p>doanh thu, funnel, đơn</p></div></a>
+    <a class="g-card" href="a02-users-list.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A2</span></div><div class="g-body"><h4>Người dùng</h4><p>Super Admin</p></div></a>
+    <a class="g-card" href="a03-users-form.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A3</span></div><div class="g-body"><h4>Sửa người dùng</h4><p>vai trò, kích hoạt</p></div></a>
+    <a class="g-card" href="a04-products-list.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A4</span></div><div class="g-body"><h4>Sản phẩm</h4><p>lọc, phân trang</p></div></a>
+    <a class="g-card" href="a05-products-form.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A5</span></div><div class="g-body"><h4>Sửa sản phẩm</h4><p>variant + ảnh</p></div></a>
+    <a class="g-card" href="a06-categories.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A6</span></div><div class="g-body"><h4>Danh mục & BST</h4><p>CRUD tên/slug</p></div></a>
+    <a class="g-card" href="a07-collections.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A7</span></div><div class="g-body"><h4>Bộ sưu tập</h4><p>danh sách BST</p></div></a>
+    <a class="g-card" href="a08-orders-list.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A8</span></div><div class="g-body"><h4>Đơn hàng</h4><p>lọc trạng thái, tìm</p></div></a>
+    <a class="g-card" href="a09-order-detail.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A9</span></div><div class="g-body"><h4>Chi tiết đơn</h4><p>timeline, transition</p></div></a>
+    <a class="g-card" href="a10-vouchers-list.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A10</span></div><div class="g-body"><h4>Voucher</h4><p>3 loại, scope, limit</p></div></a>
+    <a class="g-card" href="a11-vouchers-form.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A11</span></div><div class="g-body"><h4>Sửa voucher</h4><p>cấu hình mã</p></div></a>
+    <a class="g-card" href="a12-landing-list.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A12</span></div><div class="g-body"><h4>Landing page</h4><p>xuất bản/nháp</p></div></a>
+    <a class="g-card" href="a13-landing-editor.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A13</span></div><div class="g-body"><h4>Trình dựng landing</h4><p>block + form panel</p></div></a>
+    <a class="g-card" href="a14-contact-requests.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A14</span></div><div class="g-body"><h4>Yêu cầu custom</h4><p>lead, đánh dấu xử lý</p></div></a>
+    <a class="g-card" href="a15-settings.html"><div class="g-thumb" style="background:var(--admin-bg)"><span class="badge badge-gold code">A15</span></div><div class="g-body"><h4>Cài đặt</h4><p>ship, expiry, bank</p></div></a>
+  </div>
+</div>
+</body>
+</html>

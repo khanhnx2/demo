@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sửa landing · Vân Hương Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="landing"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<a href='a12-landing-list.html'>Landing page</a> / <b>Ưu đãi Xuân 2026</b>"></header>
+    <div class="content" style="max-width:100%">
+      <div class="page-head"><div><h1>Trình dựng landing</h1><p>Dựng bằng block — không kéo thả, điền qua form</p></div>
+        <div style="display:flex;gap:10px"><a href="s09-landing.html" class="btn btn-ghost btn-sm">Xem trước</a><a href="a12-landing-list.html" class="btn btn-gold btn-sm">Xuất bản</a></div></div>
+
+      <div style="display:grid;grid-template-columns:280px 1fr;gap:20px;align-items:start">
+        <!-- block list + palette -->
+        <div style="display:grid;gap:16px">
+          <div class="card">
+            <div class="card-head"><h3>Thứ tự block</h3></div>
+            <div style="padding:10px">
+              <div style="display:flex;align-items:center;gap:8px;padding:10px;border:1px solid var(--gold);background:var(--gold-soft);border-radius:var(--r-sm);margin-bottom:8px">
+                <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M8 6h8M8 12h8M8 18h8M4 6h.01M4 12h.01M4 18h.01"/></svg><span style="font-size:13px;font-weight:600">Hero Banner</span><span style="margin-left:auto;font-size:10px" class="muted">v1</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;padding:10px;border:1px solid var(--line);border-radius:var(--r-sm);margin-bottom:8px"><svg class="icon icon-sm muted" viewBox="0 0 24 24"><path d="M8 6h8M8 12h8M8 18h8M4 6h.01M4 12h.01M4 18h.01"/></svg><span style="font-size:13px">Countdown Timer</span></div>
+              <div style="display:flex;align-items:center;gap:8px;padding:10px;border:1px solid var(--line);border-radius:var(--r-sm);margin-bottom:8px"><svg class="icon icon-sm muted" viewBox="0 0 24 24"><path d="M8 6h8M8 12h8M8 18h8M4 6h.01M4 12h.01M4 18h.01"/></svg><span style="font-size:13px">USP List</span></div>
+              <div style="display:flex;align-items:center;gap:8px;padding:10px;border:1px solid var(--line);border-radius:var(--r-sm);margin-bottom:8px"><svg class="icon icon-sm muted" viewBox="0 0 24 24"><path d="M8 6h8M8 12h8M8 18h8M4 6h.01M4 12h.01M4 18h.01"/></svg><span style="font-size:13px">Product Grid</span></div>
+              <div style="display:flex;align-items:center;gap:8px;padding:10px;border:1px solid var(--line);border-radius:var(--r-sm)"><svg class="icon icon-sm muted" viewBox="0 0 24 24"><path d="M8 6h8M8 12h8M8 18h8M4 6h.01M4 12h.01M4 18h.01"/></svg><span style="font-size:13px">CTA Button</span></div>
+            </div>
+          </div>
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:13px;font-weight:600;margin-bottom:10px">Thêm block</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:6px">
+              <span class="badge badge-gray">Hero</span><span class="badge badge-gray">Gallery</span><span class="badge badge-gray">Testimonial</span><span class="badge badge-gray">FAQ</span><span class="badge badge-gray">Video</span><span class="badge badge-gray">Rich text</span><span class="badge badge-gray">Contact form</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- form panel for selected block -->
+        <div class="card card-pad">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600">Chỉnh sửa: Hero Banner</h3>
+            <button class="btn btn-ghost btn-sm" style="color:var(--red)">Xóa block</button>
+          </div>
+          <div class="form-row"><div><label class="alabel">Tiêu đề</label><input class="ainput" value="Bộ sưu tập Xuân — Giảm đến 20%"></div><div><label class="alabel">Nút CTA</label><input class="ainput" value="Mua ngay"></div></div>
+          <div class="field" style="margin-top:16px"><label class="alabel">Mô tả</label><textarea class="atextarea">Trang sức vàng & đá quý tự nhiên. Ưu đãi kết thúc 28/02.</textarea></div>
+          <div class="form-row" style="margin-top:4px">
+            <div><label class="alabel">Ảnh nền</label><div class="ph ratio-4-5" style="border-radius:var(--r-sm);max-width:160px;aspect-ratio:16/9"></div></div>
+            <div><label class="alabel">Link CTA</label><input class="ainput" value="/danh-muc/uu-dai"><label class="alabel" style="margin-top:14px">Căn chữ</label><select class="aselect"><option>Giữa</option><option>Trái</option></select></div>
+          </div>
+          <div class="divider"></div>
+          <p class="muted" style="font-size:12px">Form được sinh tự động từ schema của block. Rich-text được lọc HTMLPurifier phía server khi lưu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

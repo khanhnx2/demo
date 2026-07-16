@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanh toán đơn hàng · Vân Hương</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body class="store">
+<header class="store-header"><div class="wrap store-nav" style="justify-content:center"><a href="s01-home.html" class="brand">Vân Hương<small>Fine Jewelry</small></a></div></header>
+
+<div class="wrap-narrow" style="padding-top:44px;max-width:720px">
+  <div class="center" style="margin-bottom:28px">
+    <div class="badge badge-amber" style="margin-bottom:14px"><svg class="icon icon-sm" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Chờ thanh toán</div>
+    <h1 style="font-size:40px">Quét mã để hoàn tất</h1>
+    <p class="muted">Mã đơn hàng <b style="color:var(--ink)">MG260714001</b></p>
+  </div>
+
+  <div class="panel card-pad" style="border-radius:var(--r-lg);text-align:center">
+    <div class="qr">
+      <svg viewBox="0 0 100 100" style="width:100%;height:100%"><rect width="100" height="100" fill="#fff"/><g fill="#1c1a17">
+        <rect x="6" y="6" width="22" height="22"/><rect x="12" y="12" width="10" height="10" fill="#fff"/>
+        <rect x="72" y="6" width="22" height="22"/><rect x="78" y="12" width="10" height="10" fill="#fff"/>
+        <rect x="6" y="72" width="22" height="22"/><rect x="12" y="78" width="10" height="10" fill="#fff"/>
+        <rect x="36" y="8" width="6" height="6"/><rect x="48" y="8" width="6" height="6"/><rect x="36" y="20" width="6" height="6"/><rect x="58" y="14" width="6" height="6"/>
+        <rect x="8" y="36" width="6" height="6"/><rect x="20" y="36" width="6" height="6"/><rect x="8" y="48" width="6" height="6"/><rect x="14" y="58" width="6" height="6"/>
+        <rect x="40" y="40" width="8" height="8"/><rect x="54" y="40" width="6" height="6"/><rect x="40" y="54" width="6" height="6"/><rect x="52" y="52" width="8" height="8"/>
+        <rect x="70" y="40" width="6" height="6"/><rect x="82" y="46" width="6" height="6"/><rect x="70" y="58" width="6" height="6"/><rect x="84" y="66" width="6" height="6"/>
+        <rect x="40" y="72" width="6" height="6"/><rect x="52" y="82" width="6" height="6"/><rect x="64" y="72" width="6" height="6"/>
+      </g></svg>
+    </div>
+    <div style="margin-top:20px;font-family:'Ubuntu';font-size:34px;font-weight:700" class="tabnum">32.900.000₫</div>
+    <p class="muted" style="font-size:13px">MOC GEMS · Vietcombank · Nội dung: MG260714001</p>
+    <div style="display:inline-flex;gap:8px;align-items:center;margin-top:16px;color:var(--gold-deep);font-size:13px">
+      <svg class="icon icon-sm" style="animation:spin 1.2s linear infinite" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-6.2-8.6"/></svg>
+      Đang chờ xác nhận thanh toán…
+    </div>
+  </div>
+
+  <div class="notice notice-blue" style="margin-top:20px">
+    <svg class="icon icon-sm" viewBox="0 0 24 24" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+    <div>Đơn hàng tự động xác nhận sau khi nhận được thanh toán. Mã QR có hiệu lực trong <b>30 phút</b>. Trang sẽ tự cập nhật.</div>
+  </div>
+
+  <details style="margin-top:16px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:14px 18px">
+    <summary style="cursor:pointer;font-size:13px;font-weight:600">Không quét được mã? Chuyển khoản thủ công</summary>
+    <div style="font-size:13px;margin-top:12px;color:var(--ink-2)">Ngân hàng: <b>Vietcombank</b> · STK: <b>0071000123456</b> · Chủ TK: <b>CONG TY MOC GEMS</b><br>Nội dung: <b>MG260714001</b> — sau khi chuyển, đơn sẽ được xác nhận trong ít phút.</div>
+  </details>
+
+  <div class="center" style="margin-top:24px"><a href="s07-order-lookup.html" class="btn btn-ghost btn-sm">Tra cứu / hủy đơn</a></div>
+</div>
+<div style="height:60px"></div>
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</body>
+</html>

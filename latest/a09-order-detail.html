@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đơn MG260714001 · Vân Hương Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="orders"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<a href='a08-orders-list.html'>Đơn hàng</a> / <b>MG260714001</b>"></header>
+    <div class="content">
+      <div class="page-head">
+        <div style="display:flex;gap:14px;align-items:center"><h1 style="font-size:28px">MG260714001</h1><span class="badge badge-amber">Chờ thanh toán</span><span class="badge badge-red">Cần chú ý</span></div>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-gold btn-sm">Xác nhận đã thanh toán</button>
+          <button class="btn btn-ghost btn-sm" style="color:var(--red)">Hủy đơn</button>
+        </div>
+      </div>
+      <p class="muted" style="margin:-14px 0 20px;font-size:12px">Xác nhận thanh toán / hủy / khôi phục chỉ dành cho Admin trở lên.</p>
+
+      <div style="display:grid;grid-template-columns:1.7fr 1fr;gap:20px;align-items:start">
+        <div style="display:grid;gap:20px">
+          <div class="card">
+            <div class="card-head"><h3>Sản phẩm</h3></div>
+            <table class="table">
+              <tbody>
+                <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="ph thumb"></div><div><div class="cellmain">Nhẫn Kim cương Solitaire</div><div class="cellsub">Ni 8 · Vàng 18K · RING-18K-8</div></div></div></td><td style="text-align:right">×1</td><td style="text-align:right" class="tabnum">24.500.000₫</td></tr>
+                <tr><td><div style="display:flex;gap:12px;align-items:center"><div class="ph thumb"></div><div><div class="cellmain">Dây chuyền Ngọc trai</div><div class="cellsub">Vàng trắng · NECK-14K-PEARL</div></div></div></td><td style="text-align:right">×1</td><td style="text-align:right" class="tabnum">8.900.000₫</td></tr>
+              </tbody>
+            </table>
+            <div class="card-pad" style="border-top:1px solid var(--line-2)">
+              <div class="summary-row"><span>Tạm tính</span><span class="tabnum">33.400.000₫</span></div>
+              <div class="summary-row"><span>Giảm giá (XUAN2026)</span><span class="tabnum" style="color:var(--green)">−500.000₫</span></div>
+              <div class="summary-row"><span>Vận chuyển</span><span>Miễn phí</span></div>
+              <div class="summary-row total"><span>Tổng</span><span class="tabnum">32.900.000₫</span></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head"><h3>Lịch sử thanh toán</h3></div>
+            <table class="table">
+              <thead><tr><th>Thời gian</th><th>Cổng</th><th>Mã GD</th><th>Số tiền</th><th>Trạng thái</th></tr></thead>
+              <tbody>
+                <tr><td class="muted">14/07 21:41</td><td>Pay2S</td><td class="muted">req_8f2a…</td><td class="tabnum">32.900.000₫</td><td><span class="badge badge-amber">Đang chờ</span></td></tr>
+              </tbody>
+            </table>
+            <div class="card-pad"><button class="btn btn-ghost btn-sm">Xem IPN payload thô</button></div>
+          </div>
+        </div>
+
+        <div style="display:grid;gap:20px">
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:12px">Khách hàng</h3>
+            <div style="font-size:13px;line-height:1.9"><b>Nguyễn Thị Mai</b><br><span class="muted">0909 123 456</span><br>123 Lê Lợi, P. Bến Nghé, Q.1, TP.HCM</div>
+            <div class="divider"></div>
+            <p class="muted" style="font-size:12px">Ghi chú: Giao giờ hành chính, gọi trước.</p>
+          </div>
+
+          <div class="card card-pad">
+            <h3 style="font-family:'Open Sans';font-size:14px;font-weight:600;margin-bottom:16px">Tiến trình đơn</h3>
+            <ul class="timeline">
+              <li class="done"><span class="node"></span><div class="t-title">Đơn được tạo</div><div class="t-meta">14/07 21:40 · hệ thống</div></li>
+              <li class="cur"><span class="node"></span><div class="t-title">Chờ thanh toán</div><div class="t-meta">14/07 21:41 · QR đã tạo</div></li>
+              <li><span class="node"></span><div class="t-title muted">Đã thanh toán</div></li>
+              <li><span class="node"></span><div class="t-title muted">Đang gia công</div></li>
+              <li><span class="node"></span><div class="t-title muted">Đang giao</div></li>
+              <li><span class="node"></span><div class="t-title muted">Giao thành công</div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

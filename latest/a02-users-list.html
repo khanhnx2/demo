@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Người dùng · Vân Hương Admin</title>
+<link rel="stylesheet" href="assets/app.css">
+<script src="assets/admin.js"></script>
+</head>
+<body class="admin">
+  <aside class="side" data-side="users"></aside>
+  <div class="main">
+    <header class="topnav" data-crumb="<b>Người dùng</b>"></header>
+    <div class="content">
+      <div class="page-head"><div><h1>Người dùng</h1><p>Quản lý tài khoản quản trị · chỉ Super Admin</p></div>
+        <a href="a03-users-form.html" class="btn btn-gold btn-sm"><svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>Thêm người dùng</a></div>
+
+      <div class="card">
+        <table class="table">
+          <thead><tr><th>Tên</th><th>Email</th><th>Vai trò</th><th>Trạng thái</th><th>Đăng nhập cuối</th><th></th></tr></thead>
+          <tbody>
+            <tr><td><div style="display:flex;gap:10px;align-items:center"><span class="avatar">SA</span><span class="cellmain">Super Admin</span></div></td><td class="muted">admin@vanhuong.info</td><td><span class="role-pill badge-gold">Super Admin</span></td><td><span class="badge badge-green">Hoạt động</span></td><td class="muted">Hôm nay 21:30</td><td style="text-align:right"><a href="a03-users-form.html" class="btn btn-ghost btn-sm">Sửa</a></td></tr>
+            <tr><td><div style="display:flex;gap:10px;align-items:center"><span class="avatar">TL</span><span class="cellmain">Thu Lan</span></div></td><td class="muted">lan@vanhuong.info</td><td><span class="role-pill badge-blue">Admin</span></td><td><span class="badge badge-green">Hoạt động</span></td><td class="muted">Hôm nay 09:12</td><td style="text-align:right"><a href="a03-users-form.html" class="btn btn-ghost btn-sm">Sửa</a></td></tr>
+            <tr><td><div style="display:flex;gap:10px;align-items:center"><span class="avatar">HD</span><span class="cellmain">Hải Đăng</span></div></td><td class="muted">dang@vanhuong.info</td><td><span class="role-pill badge-gray">Staff</span></td><td><span class="badge badge-green">Hoạt động</span></td><td class="muted">Hôm qua</td><td style="text-align:right"><a href="a03-users-form.html" class="btn btn-ghost btn-sm">Sửa</a></td></tr>
+            <tr><td><div style="display:flex;gap:10px;align-items:center"><span class="avatar" style="opacity:.5">NP</span><span class="cellmain">Ngọc Phương</span></div></td><td class="muted">phuong@vanhuong.info</td><td><span class="role-pill badge-gray">Staff</span></td><td><span class="badge badge-gray">Vô hiệu hóa</span></td><td class="muted">02/06/2026</td><td style="text-align:right"><a href="a03-users-form.html" class="btn btn-ghost btn-sm">Sửa</a></td></tr>
+          </tbody>
+        </table>
+        <div class="pagin"><span>4 người dùng</span><div class="pages"><a href="#" class="active">1</a></div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
